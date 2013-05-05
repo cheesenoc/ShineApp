@@ -1,0 +1,31 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "",
+        "designer|userClassName": "MainNav",
+        "designer|userAlias": "mainnav",
+        "designer|initialView": true,
+        "useTitleForBackButtonText": true
+    },
+    "designerId": "eef8ee4c-a0f4-4636-b934-95b64498c1ca",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Shine"
+            },
+            "designerId": "15fc28e7-2132-4e90-9873-e97093f14f06",
+            "masterInstanceId": "6622ac0b-a1df-4d31-a49a-b2f8d50791f4"
+        }
+    ]
+}

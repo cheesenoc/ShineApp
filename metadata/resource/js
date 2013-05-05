@@ -1,0 +1,12 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "stations.json"
+    },
+    "designerId": "ae70b474-a3a2-4e0f-a9e7-4698499df3cc"
+}

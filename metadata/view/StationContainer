@@ -1,0 +1,31 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StationContainer",
+        "designer|userAlias": "stationcontainer",
+        "designer|displayName": "Station Container",
+        "layout": "fit"
+    },
+    "designerId": "6622ac0b-a1df-4d31-a49a-b2f8d50791f4",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Station List",
+                "designer|createAlias": null
+            },
+            "designerId": "b7763db8-0727-4f61-8636-6816f4cfa545",
+            "masterInstanceId": "5dd7b2e9-81ec-4504-ac2e-fda22154c425"
+        }
+    ]
+}

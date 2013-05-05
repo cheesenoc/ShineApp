@@ -1,0 +1,56 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Station"
+    },
+    "designerId": "434573a7-625d-4640-9b77-62e3190e2d90",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string",
+                "designer|userClassName": "field"
+            },
+            "designerId": "d7ef3b8a-0b6a-4376-8603-2c6156978e42"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "arrivalTime",
+                "type": "date",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "64aba9e3-df4a-45d4-87df-084e272da8e1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sunLevel",
+                "type": "int",
+                "designer|userClassName": "field2"
+            },
+            "designerId": "11a64528-9c09-4ebd-a022-05ec5f80abc0"
+        }
+    ]
+}

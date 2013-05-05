@@ -1,0 +1,12 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "citybars.css"
+    },
+    "designerId": "da6733da-f313-4f66-b062-ea52dde23f8e"
+}

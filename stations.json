@@ -1,0 +1,6 @@
+{
+    "stations": [
+    {"name": "Brig", "arrivalTime": 1, "sunLevel": 1},
+    {"name": "Biel", "arrivalTime": 2, "sunLevel": 2}
+    ]
+}

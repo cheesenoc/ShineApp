@@ -1,0 +1,45 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "stationList",
+        "designer|userClassName": "StationList",
+        "designer|userAlias": "stationlist",
+        "store": "BusinessStore"
+    },
+    "designerId": "5dd7b2e9-81ec-4504-ac2e-fda22154c425",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<img class=\"photo\" src=\"{photo_url}\" width=\"40\" height=\"40\"/>{name}<br/><img src=\"{rating_img_url_small}\"/>&nbsp;<small>{address1}</small>"
+                ],
+                "designer|displayName": "stationTpl"
+            },
+            "designerId": "0138f8bc-ac5a-4c17-b9f9-fe9a2d120dcd"
+        },
+        {
+            "type": "Ext.plugin.PullRefresh",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPullRefreshPlugin"
+            },
+            "designerId": "5c2e3717-dee7-4248-83b1-079ea43d432d"
+        }
+    ]
+}

@@ -1,0 +1,1041 @@
+Ext.define('Shine.store.BusinessStore', {
+    extend: 'Ext.data.Store',
+
+    requires: [
+        'Shine.model.Business'
+    ],
+
+    config: {
+        data: {
+            message: {
+                text: 'OK',
+                code: 0,
+                version: '1.1.1'
+            },
+            businesses: [
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: '2dkmNb_2Ttx1lrzUYtMm1g',
+                    is_closed: false,
+                    city: 'Berne',
+                    mobile_url: 'http://de.m.yelp.ch/biz/abflug-bar-berne',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.9484013,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Gerechtigkeitsgasse 50',
+                    address2: '',
+                    address3: '',
+                    phone: '',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'nightlife',
+                            search_url: 'http://de.yelp.ch/search?cflt=nightlife\u0026find_desc=\u0026find_loc=Gerechtigkeitsgasse+50%2C+Berne+3011',
+                            name: 'Nightlife'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 0.9904212,
+                    name: 'abflug bar chesi',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/abflug-bar-berne',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4540009999999999,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Gerechtigkeitsgasse+50%2C+Berne+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/Zm-B0u5JjRNFjpIxfI3xFg/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=KOPjl6Ll-BaFyyuSxXRDNg',
+                            url: 'http://de.yelp.ch/biz/abflug-bar-berne#hrid:cO4oY9TOuhd_1YRtyjoUbQ',
+                            mobile_uri: '/biz/abflug-bar-berne?full=True#hrid:cO4oY9TOuhd_1YRtyjoUbQ',
+                            text_excerpt: 'Eine sehr sch\u00f6ne Bar mit sehr f\u00e4higen, sehr zuvorkommenden Bartendern. Sch\u00f6n ist auch der im Hintergrund laufende, stylish gemachte Zusammenschnitt...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/Zm-B0u5JjRNFjpIxfI3xFg/ms',
+                            date: '2012-05-07',
+                            user_name: 'Chrille A.',
+                            id: 'cO4oY9TOuhd_1YRtyjoUbQ'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                    country_code: 'CH',
+                    id: '8A0HywWVQjGw3nCVhCkitA',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/lichtspiel-bern',
+                    review_count: 1,
+                    zip: '3008',
+                    state: 'Bern',
+                    latitude: 46.9482377,
+                    rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                    address1: 'Bahnstrasse 21',
+                    address2: '',
+                    address3: '',
+                    phone: '',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'museums',
+                            search_url: 'http://de.yelp.ch/search?cflt=museums\u0026find_desc=\u0026find_loc=Bahnstrasse+21%2C+Bern+3008',
+                            name: 'Museums'
+                        },
+                        {
+                            category_filter: 'movietheaters',
+                            search_url: 'http://de.yelp.ch/search?cflt=movietheaters\u0026find_desc=\u0026find_loc=Bahnstrasse+21%2C+Bern+3008',
+                            name: 'Cinema'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 0.90538790000000002,
+                    name: 'Lichtspiel',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/lichtspiel-bern',
+                    country: 'Switzerland',
+                    avg_rating: 5.0,
+                    longitude: 7.4150806999999999,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Bahnstrasse+21%2C+Bern+3008',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/lxBmWZrMkbmm_OEvxlzZPQ/ss',
+                            rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                            rating: 5,
+                            user_url: 'http://de.yelp.ch/user_details?userid=NZx8k7RffjmA35L2vIDYqA',
+                            url: 'http://de.yelp.ch/biz/lichtspiel-bern#hrid:YVaZnugn27ZPpjHJBeAlXA',
+                            mobile_uri: '/biz/lichtspiel-bern?full=True#hrid:YVaZnugn27ZPpjHJBeAlXA',
+                            text_excerpt: 'Lichtspiel Bern - Kino, Bar und Museum in einem\n\nAls Filmstudent interessiere ich mich von Natur aus f\u00fcr so ziemlich alles was mit Film und Filmemachen zu...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/lxBmWZrMkbmm_OEvxlzZPQ/ms',
+                            date: '2011-07-28',
+                            user_name: 'Sebastian B.',
+                            id: 'YVaZnugn27ZPpjHJBeAlXA'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'dskSuSdCBVOVTnKHYJBRIg',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/altes-tramdepot-brauerei-bern',
+                    review_count: 9,
+                    zip: '3006',
+                    state: 'Bern',
+                    latitude: 46.947497225926,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Grosser Muristalden 6',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313681415',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'beergarden',
+                            search_url: 'http://de.yelp.ch/search?cflt=beergarden\u0026find_desc=\u0026find_loc=Grosser+Muristalden+6%2C+Bern+3006',
+                            name: 'Beer Garden'
+                        }
+                    ],
+                    photo_url: 'http://media2.ak.yelpcdn.com/bpthumb/oko7qrsFAaPU4Z6NWZehRQ/ms',
+                    distance: 1.2412093,
+                    name: 'Altes Tramdepot Brauerei',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/altes-tramdepot-brauerei-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4596764471602999,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Grosser+Muristalden+6%2C+Bern+3006',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=QAO4L6rAAyHUdHhqbj03Xg',
+                            url: 'http://de.yelp.ch/biz/altes-tramdepot-brauerei-bern#hrid:8RntZrv6RPlkvBIZhkQ7kQ',
+                            mobile_uri: '/biz/altes-tramdepot-brauerei-bern?full=True#hrid:8RntZrv6RPlkvBIZhkQ7kQ',
+                            text_excerpt: 'Du magst gutes Bier aus Mikrobrauereien mit Experimentierdrang?\nDu magst gute, rustikale und lokale K\u00fcche ohne viel Schnickschnack?\nDann bist Du im alten...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ms',
+                            date: '2013-04-27',
+                            user_name: 'Bastian F.',
+                            id: '8RntZrv6RPlkvBIZhkQ7kQ'
+                        },
+                        {
+                            rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/udMAU8EXSd6rvwYBYBoFww/ss',
+                            rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                            rating: 5,
+                            user_url: 'http://de.yelp.ch/user_details?userid=CrdZUKvxaLuKBCC_73SmAQ',
+                            url: 'http://de.yelp.ch/biz/altes-tramdepot-brauerei-bern#hrid:BpM8Tu3Wpl_PkX158A09wg',
+                            mobile_uri: '/biz/altes-tramdepot-brauerei-bern?full=True#hrid:BpM8Tu3Wpl_PkX158A09wg',
+                            text_excerpt: 'If I ever visit Bern again, this is the place where I want to eat.\n\nIt has the greatest food. I ate my platter and wanted to eat my friends plate aswell. It...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/udMAU8EXSd6rvwYBYBoFww/ms',
+                            date: '2012-11-29',
+                            user_name: 'Gio C.',
+                            id: 'BpM8Tu3Wpl_PkX158A09wg'
+                        },
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/ZmK8sUfxl3Aa4VVNudQjRw/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://www.yelp.com/user_details?userid=uQtwHU95R50-M3wCfxuOFQ',
+                            url: 'http://de.yelp.ch/biz/altes-tramdepot-brauerei-bern#hrid:sFRubeS6xUKNCV-hurDWFQ',
+                            mobile_uri: '/biz/altes-tramdepot-brauerei-bern?full=True#hrid:sFRubeS6xUKNCV-hurDWFQ',
+                            text_excerpt: 'Great spot to enjoy a beer, pretzel w/ sweet mustard \u0026 Bavarian sausage after watching the bears!',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/ZmK8sUfxl3Aa4VVNudQjRw/ms',
+                            date: '2013-03-08',
+                            user_name: 'Camille C.',
+                            id: 'sFRubeS6xUKNCV-hurDWFQ'
+                        }
+                    ],
+                    photo_url_small: 'http://media2.ak.yelpcdn.com/bpthumb/oko7qrsFAaPU4Z6NWZehRQ/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'OrZWz_Q8sVlG3pdk36JRKQ',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/restaurant-imperial-bern',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.947769899999997,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'B\u00e4renplatz 21',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313125400',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=B%C3%A4renplatz+21%2C+Bern+3011',
+                            name: 'Hotels \u0026 Travel'
+                        },
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=B%C3%A4renplatz+21%2C+Bern+3011',
+                            name: 'Restaurants'
+                        }
+                    ],
+                    photo_url: 'http://media3.ak.yelpcdn.com/bpthumb/AmYKqdfL7kcuEcwuqkzSLg/ms',
+                    distance: 0.52347299999999997,
+                    name: 'Restaurant Imperial',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/restaurant-imperial-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4439095000000002,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=B%C3%A4renplatz+21%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/ztBQKoARl_tC8dvvnPbvfg/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=qX4KVKwW9R2gmI00elJ2gg',
+                            url: 'http://de.yelp.ch/biz/restaurant-imperial-bern#hrid:jw_gOnkhDnW-ZgbHU7KQbw',
+                            mobile_uri: '/biz/restaurant-imperial-bern?full=True#hrid:jw_gOnkhDnW-ZgbHU7KQbw',
+                            text_excerpt: 'Jetzt ab 9.8.2012 zusammen mit der Tapas Bar und der La Pizzeria als Plattform.be zusammengeschlossen. Gute neue Gastro-Idee mit eigener iPhone APP zur...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/ztBQKoARl_tC8dvvnPbvfg/ms',
+                            date: '2012-08-08',
+                            user_name: 'Reto S.',
+                            id: 'jw_gOnkhDnW-ZgbHU7KQbw'
+                        }
+                    ],
+                    photo_url_small: 'http://media3.ak.yelpcdn.com/bpthumb/AmYKqdfL7kcuEcwuqkzSLg/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'PC03uWB0jioSh6DO_jirwg',
+                    is_closed: false,
+                    city: 'Berne',
+                    mobile_url: 'http://de.m.yelp.ch/biz/caff%C3%A8-bar-sattler-berne',
+                    review_count: 1,
+                    zip: '3012',
+                    state: 'Bern',
+                    latitude: 46.954698700000002,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Mittelstr. 15a',
+                    address2: '',
+                    address3: '',
+                    phone: '+41315080865',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'cafes',
+                            search_url: 'http://de.yelp.ch/search?cflt=cafes\u0026find_desc=\u0026find_loc=Mittelstr.+15a%2C+Berne+3012',
+                            name: 'Cafes'
+                        },
+                        {
+                            category_filter: 'bars',
+                            search_url: 'http://de.yelp.ch/search?cflt=bars\u0026find_desc=\u0026find_loc=Mittelstr.+15a%2C+Berne+3012',
+                            name: 'Bars'
+                        }
+                    ],
+                    photo_url: 'http://media1.ak.yelpcdn.com/bpthumb/UFAIzWcl-lZFOuVRl9U9oQ/ms',
+                    distance: 0.67725250000000004,
+                    name: 'Caff\u00e8 Bar Sattler',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/caff%C3%A8-bar-sattler-berne',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4337717000000003,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Mittelstr.+15a%2C+Berne+3012',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/7WH1Tn_dwBaAMSa-5bsFyw/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=qEsXqXHNkOLLwgqg812b8g',
+                            url: 'http://de.yelp.ch/biz/caff%C3%A8-bar-sattler-berne#hrid:2pDmEYq9GWgy_vT5oOHkrg',
+                            mobile_uri: '/biz/caff%C3%A8-bar-sattler-berne?full=True#hrid:2pDmEYq9GWgy_vT5oOHkrg',
+                            text_excerpt: 'Ein sehr gut besuchtes Lokal mit orginellen Ideen, das nur toll aussieht? In dieser ehemaligen Sattlerei werden all diese Kriterien erf\u00fcllt.\nGut besucht ist...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/7WH1Tn_dwBaAMSa-5bsFyw/ms',
+                            date: '2012-07-31',
+                            user_name: 'Alexander G.',
+                            id: '2pDmEYq9GWgy_vT5oOHkrg'
+                        }
+                    ],
+                    photo_url_small: 'http://media1.ak.yelpcdn.com/bpthumb/UFAIzWcl-lZFOuVRl9U9oQ/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: '3gDje4AEwyDUx_sZh4_jPw',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/adrianos-bar-and-caf%C3%A9-bern-2',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.947860187680995,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Theaterplatz 2',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313188831',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'bars',
+                            search_url: 'http://de.yelp.ch/search?cflt=bars\u0026find_desc=\u0026find_loc=Theaterplatz+2%2C+Bern+3011',
+                            name: 'Bars'
+                        },
+                        {
+                            category_filter: 'cafes',
+                            search_url: 'http://de.yelp.ch/search?cflt=cafes\u0026find_desc=\u0026find_loc=Theaterplatz+2%2C+Bern+3011',
+                            name: 'Cafes'
+                        }
+                    ],
+                    photo_url: 'http://media2.ak.yelpcdn.com/bpthumb/soUBqw83UebY-doOxEpKEA/ms',
+                    distance: 0.67578506000000005,
+                    name: 'Adriano\'s Bar \u0026 Caf\u00e9',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/adrianos-bar-and-caf%C3%A9-bern-2',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4472933576779994,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Theaterplatz+2%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/N66fWnYo9Sf0u4UjVAnuZg/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://www.yelp.com/user_details?userid=t81oc_C48XOIEQ8f2mUw5w',
+                            url: 'http://de.yelp.ch/biz/adrianos-bar-and-caf%C3%A9-bern-2#hrid:Bo0A877gNX6d20XKZERvoQ',
+                            mobile_uri: '/biz/adrianos-bar-and-caf%C3%A9-bern-2?full=True#hrid:Bo0A877gNX6d20XKZERvoQ',
+                            text_excerpt: 'Delicious cappuccino and espresso. Coffee the way it should be. Ask for coffee beans with a nutty flavour to take home and make your own espresso. I think...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/N66fWnYo9Sf0u4UjVAnuZg/ms',
+                            date: '2013-04-05',
+                            user_name: 'Miranda K. D.',
+                            id: 'Bo0A877gNX6d20XKZERvoQ'
+                        }
+                    ],
+                    photo_url_small: 'http://media2.ak.yelpcdn.com/bpthumb/soUBqw83UebY-doOxEpKEA/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'X0BAaAK5VUT0vpozDGFRnQ',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/restaurant-bar-parterre-bern',
+                    review_count: 1,
+                    zip: '3012',
+                    state: 'Bern',
+                    latitude: 46.951542799999999,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Hallerstrasse 1',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313057039',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'food',
+                            search_url: 'http://de.yelp.ch/search?cflt=food\u0026find_desc=\u0026find_loc=Hallerstrasse+1%2C+Bern+3012',
+                            name: 'Food'
+                        },
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=Hallerstrasse+1%2C+Bern+3012',
+                            name: 'Hotels \u0026 Travel'
+                        },
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=Hallerstrasse+1%2C+Bern+3012',
+                            name: 'Restaurants'
+                        }
+                    ],
+                    photo_url: 'http://media1.ak.yelpcdn.com/bpthumb/Dz8uPN1x6Bfrp_0Ty9eNhg/ms',
+                    distance: 0.46423098000000002,
+                    name: 'Restaurant-Bar Parterre',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/restaurant-bar-parterre-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4350873999999996,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Hallerstrasse+1%2C+Bern+3012',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/7WH1Tn_dwBaAMSa-5bsFyw/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=qEsXqXHNkOLLwgqg812b8g',
+                            url: 'http://de.yelp.ch/biz/restaurant-bar-parterre-bern#hrid:t0vdEeuL-osu_35PEiOIRQ',
+                            mobile_uri: '/biz/restaurant-bar-parterre-bern?full=True#hrid:t0vdEeuL-osu_35PEiOIRQ',
+                            text_excerpt: 'Das tolle Parterre ist mein Guten-Morgen-Lokal wenn ich in Bern bin. Der Espresso stimmt und bietet folglich die perfekte Grundlage f\u00fcr jede dort servierte...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/7WH1Tn_dwBaAMSa-5bsFyw/ms',
+                            date: '2012-07-31',
+                            user_name: 'Alexander G.',
+                            id: 't0vdEeuL-osu_35PEiOIRQ'
+                        }
+                    ],
+                    photo_url_small: 'http://media1.ak.yelpcdn.com/bpthumb/Dz8uPN1x6Bfrp_0Ty9eNhg/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'ZkNnpjXQPDfgfiT-DlVG4A',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/bar-und-restaurant-parlament-bern',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.947592299999997,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'M\u00fcnstergasse 68',
+                    address2: '',
+                    address3: '',
+                    phone: '',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=M%C3%BCnstergasse+68%2C+Bern+3011',
+                            name: 'Hotels \u0026 Travel'
+                        },
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=M%C3%BCnstergasse+68%2C+Bern+3011',
+                            name: 'Restaurants'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 0.73646590000000001,
+                    name: 'Bar und Restaurant Parlament ',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/bar-und-restaurant-parlament-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4487465999999998,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=M%C3%BCnstergasse+68%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/er2rSfWPOTcxjU48--yF6w/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://www.yelp.com/user_details?userid=qtWYsp3Fagzr-yWtJvO8JQ',
+                            url: 'http://de.yelp.ch/biz/bar-und-restaurant-parlament-bern#hrid:k8DG8nRAqFmSeyy1cd2-vA',
+                            mobile_uri: '/biz/bar-und-restaurant-parlament-bern?full=True#hrid:k8DG8nRAqFmSeyy1cd2-vA',
+                            text_excerpt: 'This place is in the old town area which is loaded with restaurants and tourists. Most places are probably good. This Parlament was good I thought. Salad...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/er2rSfWPOTcxjU48--yF6w/ms',
+                            date: '2012-06-28',
+                            user_name: 'Brian B.',
+                            id: 'k8DG8nRAqFmSeyy1cd2-vA'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                    country_code: 'CH',
+                    id: 'XV3GkvqEt8xSWsFKeLWSuw',
+                    is_closed: false,
+                    city: 'Utzenstorf',
+                    mobile_url: 'http://de.m.yelp.ch/biz/landgasthof-b%C3%A4ren-utzenstorf',
+                    review_count: 1,
+                    zip: '3427',
+                    state: 'Bern',
+                    latitude: 47.129042699999999,
+                    rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                    address1: 'Hauptstrasse 18',
+                    address2: '',
+                    address3: '',
+                    phone: '+41326654422',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=Hauptstrasse+18%2C+Utzenstorf+3427',
+                            name: 'Hotels \u0026 Travel'
+                        },
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=Hauptstrasse+18%2C+Utzenstorf+3427',
+                            name: 'Restaurants'
+                        }
+                    ],
+                    photo_url: 'http://media4.ak.yelpcdn.com/bpthumb/4UVdhclY1Y-p_dUzGDjpDg/ms',
+                    distance: 13.995112000000001,
+                    name: 'Landgasthof B\u00e4ren',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/landgasthof-b%C3%A4ren-utzenstorf',
+                    country: 'Switzerland',
+                    avg_rating: 5.0,
+                    longitude: 7.5574189000000001,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Hauptstrasse+18%2C+Utzenstorf+3427',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/9IW70fb1vmqQcRmaVX3OCg/ss',
+                            rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                            rating: 5,
+                            user_url: 'http://de.yelp.ch/user_details?userid=MfPQ5Uqr1BXaZlYQYb0Lug',
+                            url: 'http://de.yelp.ch/biz/landgasthof-b%C3%A4ren-utzenstorf#hrid:71iJogedPkNPzqY3q7S9Tw',
+                            mobile_uri: '/biz/landgasthof-b%C3%A4ren-utzenstorf?full=True#hrid:71iJogedPkNPzqY3q7S9Tw',
+                            text_excerpt: 'Delicious.',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/9IW70fb1vmqQcRmaVX3OCg/ms',
+                            date: '2012-09-15',
+                            user_name: 'G\u00fcrkan S.',
+                            id: '71iJogedPkNPzqY3q7S9Tw'
+                        }
+                    ],
+                    photo_url_small: 'http://media4.ak.yelpcdn.com/bpthumb/4UVdhclY1Y-p_dUzGDjpDg/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'Zna4j08cuWTTy4zNab6Lhg',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/turnhalle-cafe-bar-bern',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.950336100000001,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Speichergasse 4',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313111551',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'divebars',
+                            search_url: 'http://de.yelp.ch/search?cflt=divebars\u0026find_desc=\u0026find_loc=Speichergasse+4%2C+Bern+3011',
+                            name: 'Dive Bars'
+                        },
+                        {
+                            category_filter: 'musicvenues',
+                            search_url: 'http://de.yelp.ch/search?cflt=musicvenues\u0026find_desc=\u0026find_loc=Speichergasse+4%2C+Bern+3011',
+                            name: 'Music Venues'
+                        }
+                    ],
+                    photo_url: 'http://media2.ak.yelpcdn.com/bpthumb/csn_FqH_XIsp6kNwDjhfpw/ms',
+                    distance: 0.57910717,
+                    name: 'Turnhalle Cafe Bar',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/turnhalle-cafe-bar-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4429803999999997,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Speichergasse+4%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=QAO4L6rAAyHUdHhqbj03Xg',
+                            url: 'http://de.yelp.ch/biz/turnhalle-cafe-bar-bern#hrid:8h3kWUZyvhx3QaA_TeIuuQ',
+                            mobile_uri: '/biz/turnhalle-cafe-bar-bern?full=True#hrid:8h3kWUZyvhx3QaA_TeIuuQ',
+                            text_excerpt: 'Die Turnhalle ist einer der bessernen Bars im berner Zentrum. \nHier finden st\u00e4ndig Konzerte, LiveActs, Brunches und so weiter statt. \nDas internationale...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ms',
+                            date: '2013-04-27',
+                            user_name: 'Bastian F.',
+                            id: '8h3kWUZyvhx3QaA_TeIuuQ'
+                        }
+                    ],
+                    photo_url_small: 'http://media2.ak.yelpcdn.com/bpthumb/csn_FqH_XIsp6kNwDjhfpw/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'w_AwnryL1x_EJZpmOW5dMg',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/markthalle-cityhof-bern-bern',
+                    review_count: 1,
+                    zip: '3013',
+                    state: 'Bern',
+                    latitude: 46.957876499999998,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Breitenrainstrasse 22',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313292990',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'professional',
+                            search_url: 'http://de.yelp.ch/search?cflt=professional\u0026find_desc=\u0026find_loc=Breitenrainstrasse+22%2C+Bern+3013',
+                            name: 'Professional Services'
+                        }
+                    ],
+                    photo_url: 'http://media3.ak.yelpcdn.com/bpthumb/OM7Ll1EaeuqGT2bXxBTRXg/ms',
+                    distance: 1.2418312,
+                    name: 'Markthalle Cityhof Bern ',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/markthalle-cityhof-bern-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4518510999999998,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Breitenrainstrasse+22%2C+Bern+3013',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=QAO4L6rAAyHUdHhqbj03Xg',
+                            url: 'http://de.yelp.ch/biz/markthalle-cityhof-bern-bern#hrid:M7I0Oxo5G_vSx3NL2tERow',
+                            mobile_uri: '/biz/markthalle-cityhof-bern-bern?full=True#hrid:M7I0Oxo5G_vSx3NL2tERow',
+                            text_excerpt: 'Die Markthalle ist, wie der Name schon sagt, ein Sammelsorium an verschiedenen Bars, Restaureants, Take Aways  und einem ganz in der hintern rechten Ecke...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ms',
+                            date: '2013-04-27',
+                            user_name: 'Bastian F.',
+                            id: 'M7I0Oxo5G_vSx3NL2tERow'
+                        }
+                    ],
+                    photo_url_small: 'http://media3.ak.yelpcdn.com/bpthumb/OM7Ll1EaeuqGT2bXxBTRXg/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png',
+                    country_code: 'CH',
+                    id: 'ZM5Ub6m9D8TzBnpNyLUy4A',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/mr-pickwick-pub-i-bern',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.946365399999998,
+                    rating_img_url_small: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png',
+                    address1: 'Wallgasse',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313112862',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'food',
+                            search_url: 'http://de.yelp.ch/search?cflt=food\u0026find_desc=\u0026find_loc=Wallgasse%2C+Bern+3011',
+                            name: 'Food'
+                        },
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=Wallgasse%2C+Bern+3011',
+                            name: 'Hotels \u0026 Travel'
+                        }
+                    ],
+                    photo_url: 'http://media1.ak.yelpcdn.com/bpthumb/XJGD9PXOWN11issDQBwi0g/ms',
+                    distance: 0.25094457999999997,
+                    name: 'Mr. Pickwick Pub I',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/mr-pickwick-pub-i-bern',
+                    country: 'Switzerland',
+                    avg_rating: 3.0,
+                    longitude: 7.4385059,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Wallgasse%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ss',
+                            rating_img_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png',
+                            rating: 3,
+                            user_url: 'http://de.yelp.ch/user_details?userid=QAO4L6rAAyHUdHhqbj03Xg',
+                            url: 'http://de.yelp.ch/biz/mr-pickwick-pub-i-bern#hrid:P3xPm3HQhVJ0ZZVYRVl7XA',
+                            mobile_uri: '/biz/mr-pickwick-pub-i-bern?full=True#hrid:P3xPm3HQhVJ0ZZVYRVl7XA',
+                            text_excerpt: 'Auf der Suche nach einem guten Pub in Bern, schickte mich ein Freund in die Wallgasse.\nDas Pickwick schaut schon von aussen aus, wie ein traditionelles Pub....',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ms',
+                            date: '2013-04-27',
+                            user_name: 'Bastian F.',
+                            id: 'P3xPm3HQhVJ0ZZVYRVl7XA'
+                        }
+                    ],
+                    photo_url_small: 'http://media1.ak.yelpcdn.com/bpthumb/XJGD9PXOWN11issDQBwi0g/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'q5I3yos4hAR-UNXHtlt7DA',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/restaurant-le-l%C3%B6tschberg-bern',
+                    review_count: 2,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.949061100000002,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Zeughausgasse 16',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313113455',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'wine_bars',
+                            search_url: 'http://de.yelp.ch/search?cflt=wine_bars\u0026find_desc=\u0026find_loc=Zeughausgasse+16%2C+Bern+3011',
+                            name: 'Wine Bars'
+                        },
+                        {
+                            category_filter: 'delicatessen',
+                            search_url: 'http://de.yelp.ch/search?cflt=delicatessen\u0026find_desc=\u0026find_loc=Zeughausgasse+16%2C+Bern+3011',
+                            name: 'Delicatessen'
+                        },
+                        {
+                            category_filter: 'swissfood',
+                            search_url: 'http://de.yelp.ch/search?cflt=swissfood\u0026find_desc=\u0026find_loc=Zeughausgasse+16%2C+Bern+3011',
+                            name: 'Swiss Food'
+                        }
+                    ],
+                    photo_url: 'http://media3.ak.yelpcdn.com/bpthumb/5dOgg_OWvooptmPBUD06mA/ms',
+                    distance: 0.62513940000000001,
+                    name: 'Restaurant Le L\u00f6tschberg',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/restaurant-le-l%C3%B6tschberg-bern',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4454048000000004,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Zeughausgasse+16%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/qPWW53OTz1ygXeVrsHdh2g/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=vqMtD8uACx47Vo8No-L_HQ',
+                            url: 'http://de.yelp.ch/biz/restaurant-le-l%C3%B6tschberg-bern#hrid:8H3OZAh-gNCWFobCy2STCQ',
+                            mobile_uri: '/biz/restaurant-le-l%C3%B6tschberg-bern?full=True#hrid:8H3OZAh-gNCWFobCy2STCQ',
+                            text_excerpt: 'Cuisine plut\u00f4t suisse. R\u00f6stis, fondues, raclette, etc et des bons vins. Tout ceci dans une ambiance plut\u00f4t moderne. Le service est tr\u00e8s sympa et rapide. Par...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/qPWW53OTz1ygXeVrsHdh2g/ms',
+                            date: '2013-04-14',
+                            user_name: 'Katrin K.',
+                            id: '8H3OZAh-gNCWFobCy2STCQ'
+                        },
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/OSdReygda7AT-hIs3Oe_7w/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=eKsUICltqWL0IISViuSEaA',
+                            url: 'http://de.yelp.ch/biz/restaurant-le-l%C3%B6tschberg-bern#hrid:bEBjZ2RR5tNPOS41PjRCpw',
+                            mobile_uri: '/biz/restaurant-le-l%C3%B6tschberg-bern?full=True#hrid:bEBjZ2RR5tNPOS41PjRCpw',
+                            text_excerpt: 'Beitrag starten...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/OSdReygda7AT-hIs3Oe_7w/ms',
+                            date: '2012-10-02',
+                            user_name: 'Jan F.',
+                            id: 'bEBjZ2RR5tNPOS41PjRCpw'
+                        }
+                    ],
+                    photo_url_small: 'http://media3.ak.yelpcdn.com/bpthumb/5dOgg_OWvooptmPBUD06mA/ss'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: '458UdwdtCkpXnvehbLOa2A',
+                    is_closed: false,
+                    city: 'Berne',
+                    mobile_url: 'http://de.m.yelp.ch/biz/silobar-berne',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.946759999999998,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'm\u00fchlenplatz 11',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313115417',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'cocktailbars',
+                            search_url: 'http://de.yelp.ch/search?cflt=cocktailbars\u0026find_desc=\u0026find_loc=m%C3%BChlenplatz+11%2C+Berne+3011',
+                            name: 'Cocktail Bars'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 1.0771938999999999,
+                    name: 'Silobar',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/silobar-berne',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4563136999999999,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=m%C3%BChlenplatz+11%2C+Berne+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://s3-media2.ak.yelpcdn.com/assets/2/www/img/2fa1c69bbd8e/gfx/blank_user_extra_small.gif',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://www.yelp.com.au/user_details?userid=hmfYbIHK0YLJffY5yvLbNw',
+                            url: 'http://de.yelp.ch/biz/silobar-berne#hrid:-8JrUbMRUMQTUOMPtjWXeA',
+                            mobile_uri: '/biz/silobar-berne?full=True#hrid:-8JrUbMRUMQTUOMPtjWXeA',
+                            text_excerpt: 'Fun Bar with mostly young people, decent prices and music that gets people on the dancefloor (dancefloor is small though).\nQuite a hazzle to get there but...',
+                            user_photo_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/7eb06b6a9db5/gfx/blank_user_small.gif',
+                            date: '2012-11-16',
+                            user_name: 'O S.',
+                            id: '-8JrUbMRUMQTUOMPtjWXeA'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png',
+                    country_code: 'CH',
+                    id: 'ptb3UgJWPHrLf3jDxIVSHg',
+                    is_closed: false,
+                    city: 'Niederscherli',
+                    mobile_url: 'http://de.m.yelp.ch/biz/hotel-b%C3%A4ren-fritz-m%C3%BChlestein-niederscherli',
+                    review_count: 1,
+                    zip: '3145',
+                    state: 'Bern',
+                    latitude: 46.885386599999997,
+                    rating_img_url_small: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png',
+                    address1: 'Schwarzenburgstrasse 799',
+                    address2: '',
+                    address3: '',
+                    phone: '+41318490214',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=Schwarzenburgstrasse+799%2C+Niederscherli+3145',
+                            name: 'Restaurants'
+                        },
+                        {
+                            category_filter: 'hotels',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotels\u0026find_desc=\u0026find_loc=Schwarzenburgstrasse+799%2C+Niederscherli+3145',
+                            name: 'Hotels'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 4.6152519999999999,
+                    name: 'Hotel B\u00e4ren Fritz M\u00fchlestein',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/hotel-b%C3%A4ren-fritz-m%C3%BChlestein-niederscherli',
+                    country: 'Switzerland',
+                    avg_rating: 3.0,
+                    longitude: 7.3892353000000002,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Schwarzenburgstrasse+799%2C+Niederscherli+3145',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png',
+                            user_photo_url_small: 'http://s3-media2.ak.yelpcdn.com/assets/2/www/img/2fa1c69bbd8e/gfx/blank_user_extra_small.gif',
+                            rating_img_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png',
+                            rating: 3,
+                            user_url: 'http://de.yelp.ch/user_details?userid=v1nkgRDTrSpdCVfeWCBadw',
+                            url: 'http://de.yelp.ch/biz/hotel-b%C3%A4ren-fritz-m%C3%BChlestein-niederscherli#hrid:LTq2SStX-5Yqhxtk7SZmTQ',
+                            mobile_uri: '/biz/hotel-b%C3%A4ren-fritz-m%C3%BChlestein-niederscherli?full=True#hrid:LTq2SStX-5Yqhxtk7SZmTQ',
+                            text_excerpt: 'Just an hotel now an no restaurant anymore. Breakfast only for hotel guests.',
+                            user_photo_url: 'http://s3-media3.ak.yelpcdn.com/assets/2/www/img/7eb06b6a9db5/gfx/blank_user_small.gif',
+                            date: '2011-10-20',
+                            user_name: 'Markus M.',
+                            id: 'LTq2SStX-5Yqhxtk7SZmTQ'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                    country_code: 'CH',
+                    id: 'oPLLzzYZeEW9_o7_BeM5YQ',
+                    is_closed: false,
+                    city: 'M\u00fcnchenbuchsee',
+                    mobile_url: 'http://de.m.yelp.ch/biz/restaurant-b%C3%A4ren-m%C3%BCnchenbuchsee',
+                    review_count: 1,
+                    zip: '3053',
+                    state: 'Bern',
+                    latitude: 47.021495999999999,
+                    rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                    address1: 'Bernstrasse 3',
+                    address2: '',
+                    address3: '',
+                    phone: '+41318690299',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'hotelstravel',
+                            search_url: 'http://de.yelp.ch/search?cflt=hotelstravel\u0026find_desc=\u0026find_loc=Bernstrasse+3%2C+M%C3%BCnchenbuchsee+3053',
+                            name: 'Hotels \u0026 Travel'
+                        },
+                        {
+                            category_filter: 'restaurants',
+                            search_url: 'http://de.yelp.ch/search?cflt=restaurants\u0026find_desc=\u0026find_loc=Bernstrasse+3%2C+M%C3%BCnchenbuchsee+3053',
+                            name: 'Restaurants'
+                        }
+                    ],
+                    photo_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif',
+                    distance: 5.3539349999999999,
+                    name: 'Restaurant B\u00e4ren',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/restaurant-b%C3%A4ren-m%C3%BCnchenbuchsee',
+                    country: 'Switzerland',
+                    avg_rating: 4.0,
+                    longitude: 7.4507979999999998,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Bernstrasse+3%2C+M%C3%BCnchenbuchsee+3053',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ss',
+                            rating_img_url: 'http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+                            rating: 4,
+                            user_url: 'http://de.yelp.ch/user_details?userid=QAO4L6rAAyHUdHhqbj03Xg',
+                            url: 'http://de.yelp.ch/biz/restaurant-b%C3%A4ren-m%C3%BCnchenbuchsee#hrid:UPJXsIoDCHdww6m0KBXLEQ',
+                            mobile_uri: '/biz/restaurant-b%C3%A4ren-m%C3%BCnchenbuchsee?full=True#hrid:UPJXsIoDCHdww6m0KBXLEQ',
+                            text_excerpt: 'Aufmerksam geworden durch die Ank\u00fcndigung eines Konzertes mit keltischer Musik bin ich mit einer Freundin hier eingekehrt. Wir sind etra etwas f\u00fcher hier...',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/xO3VeCubXqbJ7cKAQx1zkA/ms',
+                            date: '2013-04-07',
+                            user_name: 'Bastian F.',
+                            id: 'UPJXsIoDCHdww6m0KBXLEQ'
+                        }
+                    ],
+                    photo_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5f85b62dfdb1/gfx/blank_biz_small.gif'
+                },
+                {
+                    rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                    country_code: 'CH',
+                    id: 'kJ3R6A_asZVsRSy6KiDE1A',
+                    is_closed: false,
+                    city: 'Bern',
+                    mobile_url: 'http://de.m.yelp.ch/biz/volver-bern',
+                    review_count: 1,
+                    zip: '3011',
+                    state: 'Bern',
+                    latitude: 46.948410500000001,
+                    rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                    address1: 'Rathausplatz 8',
+                    address2: '',
+                    address3: '',
+                    phone: '+41313120404',
+                    state_code: 'BE',
+                    categories: [
+                        {
+                            category_filter: 'tapas',
+                            search_url: 'http://de.yelp.ch/search?cflt=tapas\u0026find_desc=\u0026find_loc=Rathausplatz+8%2C+Bern+3011',
+                            name: 'Tapas Bars'
+                        }
+                    ],
+                    photo_url: 'http://media2.ak.yelpcdn.com/bpthumb/G5adAUZcaFGn4SgexKFMTA/ms',
+                    distance: 0.90609824999999999,
+                    name: 'Volver',
+                    neighborhoods: [
+                        
+                    ],
+                    url: 'http://de.yelp.ch/biz/volver-bern',
+                    country: 'Switzerland',
+                    avg_rating: 5.0,
+                    longitude: 7.4521489000000001,
+                    nearby_url: 'http://de.yelp.ch/search?find_desc=\u0026find_loc=Rathausplatz+8%2C+Bern+3011',
+                    reviews: [
+                        {
+                            rating_img_url_small: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png',
+                            user_photo_url_small: 'http://media1.ak.yelpcdn.com/upthumb/kmK-Iyo7rn6dGJRvplewYA/ss',
+                            rating_img_url: 'http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png',
+                            rating: 5,
+                            user_url: 'http://de.yelp.ch/user_details?userid=ZIfOlnD0zx-DvH1XaNUraQ',
+                            url: 'http://de.yelp.ch/biz/volver-bern#hrid:gDvp4Amn3RukKmFOX6C5OA',
+                            mobile_uri: '/biz/volver-bern?full=True#hrid:gDvp4Amn3RukKmFOX6C5OA',
+                            text_excerpt: 'My favorite place to hang out whenever I am in Berne.\nFresh tapas, good beer, great people!',
+                            user_photo_url: 'http://media1.ak.yelpcdn.com/upthumb/kmK-Iyo7rn6dGJRvplewYA/ms',
+                            date: '2013-04-28',
+                            user_name: 'Martin S.',
+                            id: 'gDvp4Amn3RukKmFOX6C5OA'
+                        }
+                    ],
+                    photo_url_small: 'http://media2.ak.yelpcdn.com/bpthumb/G5adAUZcaFGn4SgexKFMTA/ss'
+                }
+            ]
+        },
+        model: 'Shine.model.Business',
+        storeId: 'BusinessStore',
+        proxy: {
+            type: 'jsonp',
+            reader: {
+                type: 'json',
+                rootProperty: 'businesses'
+            }
+        }
+    }
+});

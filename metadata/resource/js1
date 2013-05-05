@@ -1,0 +1,12 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "mockup.json"
+    },
+    "designerId": "07faeaaf-baf8-4cb6-8caa-e5b0d1822853"
+}
