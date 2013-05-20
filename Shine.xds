@@ -25,24 +25,24 @@
         "eef8ee4c-a0f4-4636-b934-95b64498c1ca": {
             "paths": [
                 "metadata/view/MainNav",
-                "Shine/view/override/MainNav.js",
-                "Shine/view/MainNav.js"
+                "app/view/override/MainNav.js",
+                "app/view/MainNav.js"
             ],
             "className": "MainNav"
         },
         "d7a8994c-1d7a-44a3-9279-60df85996adb": {
             "paths": [
                 "metadata/store/Stations",
-                "Shine/store/override/Stations.js",
-                "Shine/store/Stations.js"
+                "app/store/override/Stations.js",
+                "app/store/Stations.js"
             ],
             "className": "Stations"
         },
         "434573a7-625d-4640-9b77-62e3190e2d90": {
             "paths": [
                 "metadata/model/Station",
-                "Shine/model/override/Station.js",
-                "Shine/model/Station.js"
+                "app/model/override/Station.js",
+                "app/model/Station.js"
             ],
             "className": "Station"
         },
@@ -55,48 +55,48 @@
         "5dd7b2e9-81ec-4504-ac2e-fda22154c425": {
             "paths": [
                 "metadata/view/StationList",
-                "Shine/view/override/StationList.js",
-                "Shine/view/StationList.js"
+                "app/view/override/StationList.js",
+                "app/view/StationList.js"
             ],
             "className": "StationList"
         },
         "6622ac0b-a1df-4d31-a49a-b2f8d50791f4": {
             "paths": [
                 "metadata/view/StationContainer",
-                "Shine/view/override/StationContainer.js",
-                "Shine/view/StationContainer.js"
+                "app/view/override/StationContainer.js",
+                "app/view/StationContainer.js"
             ],
             "className": "StationContainer"
         },
         "1fc48fb6-2a1c-4d41-adfc-c02b8942c7af": {
             "paths": [
                 "metadata/view/DetailPanelOld",
-                "Shine/view/override/DetailPanelOld.js",
-                "Shine/view/DetailPanelOld.js"
+                "app/view/override/DetailPanelOld.js",
+                "app/view/DetailPanelOld.js"
             ],
             "className": "DetailPanelOld"
         },
         "d06e965f-1dc4-4d50-8dfd-854b7d5182ba": {
             "paths": [
                 "metadata/model/Business",
-                "Shine/model/override/Business.js",
-                "Shine/model/Business.js"
+                "app/model/override/Business.js",
+                "app/model/Business.js"
             ],
             "className": "Business"
         },
         "d99c5a74-1963-4be1-8af7-a23a434bc6e5": {
             "paths": [
                 "metadata/store/BusinessStore",
-                "Shine/store/override/BusinessStore.js",
-                "Shine/store/BusinessStore.js"
+                "app/store/override/BusinessStore.js",
+                "app/store/BusinessStore.js"
             ],
             "className": "BusinessStore"
         },
         "c6701218-0f68-40a8-862f-a9a8710b8e68": {
             "paths": [
                 "metadata/controller/StationController",
-                "Shine/controller/override/StationController.js",
-                "Shine/controller/StationController.js"
+                "app/controller/override/StationController.js",
+                "app/controller/StationController.js"
             ],
             "className": "StationController"
         },
@@ -129,8 +129,8 @@
         "64bd55e4-da39-4ace-8846-48891a8bfbac": {
             "paths": [
                 "metadata/view/DetailPanel",
-                "Shine/view/override/DetailPanel.js",
-                "Shine/view/DetailPanel.js"
+                "app/view/override/DetailPanel.js",
+                "app/view/DetailPanel.js"
             ],
             "className": "DetailPanel"
         }

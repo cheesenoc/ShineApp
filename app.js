@@ -33,7 +33,6 @@ Ext.application({
         'StationContainer',
         'DetailPanel'
     ],
-    appFolder: 'Shine',
     controllers: [
         'StationController'
     ],
