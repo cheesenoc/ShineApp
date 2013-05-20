@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "field3"
+                "name": "id"
             },
             "designerId": "6e546d35-7237-499c-ab5b-ec900de274a5"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name",
-                "designer|userClassName": "field4"
+                "name": "name"
             },
             "designerId": "21e39af6-877b-42b2-9825-a5f408011ad5"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "latitude",
-                "designer|userClassName": "field5"
+                "name": "latitude"
             },
             "designerId": "e1bc966d-5d83-409c-8926-933f2c0ea350"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "longitude",
-                "designer|userClassName": "field6"
+                "name": "longitude"
             },
             "designerId": "4b90bafb-c0f8-4860-9bca-c9393b198515"
         },
@@ -70,8 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "address1",
-                "designer|userClassName": "field7"
+                "name": "address1"
             },
             "designerId": "8fca199e-1f0e-47fe-91f0-815190461bfb"
         },
@@ -83,8 +78,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "address2",
-                "designer|userClassName": "field8"
+                "name": "address2"
             },
             "designerId": "2f9d820e-477b-4df0-8f3c-375bdf035eb5"
         },
@@ -96,8 +90,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "address3",
-                "designer|userClassName": "field9"
+                "name": "address3"
             },
             "designerId": "2122e330-60b1-4220-88d5-045e13c03e10"
         },
@@ -109,8 +102,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "phone",
-                "designer|userClassName": "field10"
+                "name": "phone"
             },
             "designerId": "0703183a-ba9b-4f29-b6b5-25f37c55949f"
         },
@@ -122,8 +114,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "state_code",
-                "designer|userClassName": "field11"
+                "name": "state_code"
             },
             "designerId": "0e8f0425-5212-4ab8-ac79-fcdbdc4d825f"
         },
@@ -135,8 +126,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "mobile_url",
-                "designer|userClassName": "field12"
+                "name": "mobile_url"
             },
             "designerId": "7961989d-a514-42ad-a52f-70d7638fd616"
         },
@@ -148,8 +138,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "rating_img_url_small",
-                "designer|userClassName": "field13"
+                "name": "rating_img_url_small"
             },
             "designerId": "2e0238a9-59ac-45a0-8235-e0443e10524c"
         },
@@ -161,8 +150,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "photo_url",
-                "designer|userClassName": "field14"
+                "name": "photo_url"
             },
             "designerId": "fe864d24-2df3-4813-b623-72dc69b56042"
         }

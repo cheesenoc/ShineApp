@@ -20,9 +20,6 @@
                 "type": "object"
             },
             "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyJsonPProxy"
-            },
             "designerId": "7804790a-64f7-46c1-ab30-accc5da30599",
             "cn": [
                 {
@@ -33,8 +30,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "rootProperty": "businesses",
-                        "designer|userClassName": "MyJsonReader1"
+                        "rootProperty": "businesses"
                     },
                     "designerId": "9d32d303-6d3c-4c1c-9a61-ddbc432d782a"
                 }

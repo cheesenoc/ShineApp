@@ -5,5 +5,11 @@
         "type": "array"
     },
     "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Library",
+        "basePath": "touch/",
+        "debug": true,
+        "theme": null
+    },
     "designerId": "afe48120-9d88-47cf-ba10-748b0a4ed71e"
 }

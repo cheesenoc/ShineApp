@@ -1,6 +1,28 @@
 {
     "stations": [
-    {"name": "Brig", "arrivalTime": 1, "sunLevel": 1},
-    {"name": "Biel", "arrivalTime": 2, "sunLevel": 2}
+        {
+            "name": "Brig",
+            "arrivalTime": "15:04",
+            "departureTime": "13:32",
+            "sunLevel": 1,
+            "temperature": 15,
+            "forecastTime": "15.00",
+            "forecastSunLevel": 2,
+            "forecastTemperature": 17,
+            "latitude": 46.3142438,
+            "longitude": 7.9866989
+        },
+        {
+            "name": "Biel",
+            "arrivalTime": "15:10",
+            "departureTime": "13:32",
+            "sunLevel": 2,
+            "temperature": 15,
+            "forecastTime": "15.00",
+            "forecastSunLevel": 2,
+            "forecastTemperature": 17,
+            "latitude": 47.1375,
+            "longitude": 7.2472
+        }
     ]
 }

@@ -5,5 +5,8 @@
         "type": "array"
     },
     "codeClass": null,
-    "designerId": "1ec154f8-7bfc-4174-83e0-480210bdc239"
+    "userConfig": {
+        "designer|userClassName": "GoogleMapsAPI"
+    },
+    "designerId": "f60edf28-12c6-4f4a-8bd6-a906d63fdb06"
 }

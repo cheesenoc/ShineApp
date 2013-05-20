@@ -1,31 +1,17 @@
 {
-    "type": "Ext.tab.Panel",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "container|pack": "center",
         "designer|userClassName": "DetailPanel",
-        "designer|userAlias": "detailpanel"
+        "layout": "vbox"
     },
-    "designerId": "1fc48fb6-2a1c-4d41-adfc-c02b8942c7af",
+    "designerId": "64bd55e4-da39-4ace-8846-48891a8bfbac",
     "cn": [
-        {
-            "type": "Ext.tab.Bar",
-            "reference": {
-                "name": "tabBar",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "container|pack": "center",
-                "docked": "top",
-                "ui": "light",
-                "designer|userClassName": "MyTabBar"
-            },
-            "designerId": "e6adfe39-e058-4b1d-9368-dd7f980bc819"
-        },
         {
             "type": "Ext.Container",
             "reference": {
@@ -34,13 +20,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Transport",
-                "id": "contact",
-                "designer|userClassName": "MyContainer1",
-                "designer|displayName": "Transport Tab",
-                "designer|createAlias": null
+                "height": 100,
+                "id": "weather",
+                "designer|displayName": "TopContainer",
+                "layout": "hbox"
             },
-            "designerId": "bb8f7418-2a6a-45fd-bc54-55317d641b9b",
+            "designerId": "6fb60db0-366f-4945-961f-ff7c86b7b186",
             "cn": [
                 {
                     "type": "Ext.Container",
@@ -50,12 +35,24 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "info",
+                        "data": [
+                            "{\r",
+                            "            \"name\": \"Brig\",\r",
+                            "            \"arrivalTime\": \"15:04\",\r",
+                            "            \"departureTime\": \"13:32\",\r",
+                            "            \"sunLevel\": 1,\r",
+                            "            \"temperature\": 15,\r",
+                            "            \"forecastTime\": \"15.00\",\r",
+                            "            \"forecastSunLevel\": 2,\r",
+                            "            \"forecastTemperature\": 17\r",
+                            "        }"
+                        ],
+                        "id": "weatherNow",
                         "padding": 10,
-                        "designer|userClassName": "MyContainer2",
-                        "layout": "hbox"
+                        "width": 100,
+                        "designer|displayName": "TopLeftContainer"
                     },
-                    "designerId": "69aad421-19f7-4d2b-a5ac-8284394fb756",
+                    "designerId": "467c50fe-00ab-4462-a38d-104bbf5af9b8",
                     "cn": [
                         {
                             "type": "Ext.XTemplate",
@@ -65,78 +62,12 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "tpl",
                                 "implHandler": [
-                                    "<img class=\"photo\" src=\"{photo_url}\" width=\"100\" height=\"100\"/>;<h2>{name}</h2><div class=\"info\">{address1}<br/><imm src=\"{rating_img_url_sall}\"/></div>"
+                                    "{name}"
                                 ],
                                 "designer|displayName": "tpl"
                             },
-                            "designerId": "ba098620-8c93-4ab6-8ce3-7184c0036aea"
-                        },
-                        {
-                            "type": "Ext.Component",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "height": 100,
-                                "id": "photo",
-                                "width": 100,
-                                "designer|userClassName": "MyComponent"
-                            },
-                            "designerId": "bbdf4f53-4e4d-48f3-8b09-8db403b1f943",
-                            "cn": [
-                                {
-                                    "type": "Ext.XTemplate",
-                                    "reference": {
-                                        "name": "tpl",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "tpl",
-                                        "implHandler": [
-                                            "<img class=\"photo\" src=\"{photo_url}\" width=\"100\" height=\"100\"/>"
-                                        ],
-                                        "designer|displayName": "tpl"
-                                    },
-                                    "designerId": "2aa67c34-fa17-4fdc-bcea-6efbe5d419cd"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.Component",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "id": "data",
-                                "padding": 10,
-                                "designer|userClassName": "MyComponent1"
-                            },
-                            "designerId": "6e78b963-c047-43dc-87a8-69a625723f13",
-                            "cn": [
-                                {
-                                    "type": "Ext.XTemplate",
-                                    "reference": {
-                                        "name": "tpl",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "tpl",
-                                        "implHandler": [
-                                            "<h2>{name}</h2><div class=\"info\">{address1}<br/><img src=\"{rating_img_url_small}\"/></div>"
-                                        ],
-                                        "designer|displayName": "tpl"
-                                    },
-                                    "designerId": "0bdc1ffe-0eff-4092-ad68-5c46f27cae02"
-                                }
-                            ]
+                            "designerId": "88cc8fa4-5c96-4dbc-a9b1-843c79635ead"
                         }
                     ]
                 },
@@ -148,73 +79,130 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|pack": "center",
-                        "id": "call",
-                        "designer|userClassName": "MyContainer3",
-                        "layout": "hbox"
+                        "data": [
+                            "{\r",
+                            "            \"name\": \"Brig\",\r",
+                            "            \"arrivalTime\": \"15:04\",\r",
+                            "            \"departureTime\": \"13:32\",\r",
+                            "            \"sunLevel\": 1,\r",
+                            "            \"temperature\": 15,\r",
+                            "            \"forecastTime\": \"15.00\",\r",
+                            "            \"forecastSunLevel\": 2,\r",
+                            "            \"forecastTemperature\": 17\r",
+                            "        }"
+                        ],
+                        "id": "weatherForecast",
+                        "padding": 10,
+                        "width": 100,
+                        "designer|displayName": "TopRightContainer"
                     },
-                    "designerId": "e4a56913-b67b-43eb-a816-447bfdc63536",
+                    "designerId": "cea8fed0-808c-4f87-875a-4ace9b2771d3",
                     "cn": [
                         {
-                            "type": "Ext.Button",
+                            "type": "Ext.XTemplate",
                             "reference": {
-                                "name": "items",
-                                "type": "array"
+                                "name": "tpl",
+                                "type": "object"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "id": "callButton",
-                                "width": 100,
-                                "designer|userClassName": "MyButton",
-                                "text": "Call"
+                                "implHandler": [
+                                    "{forecastTime}"
+                                ],
+                                "designer|displayName": "tpl"
                             },
-                            "designerId": "f369425e-cdd2-404d-8e5e-d8296c38805f"
-                        },
-                        {
-                            "type": "Ext.Spacer",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "width": 57,
-                                "designer|userClassName": "MySpacer"
-                            },
-                            "designerId": "1ff4469d-ff3a-4384-9536-4d1b4070a9a0"
-                        },
-                        {
-                            "type": "Ext.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "id": "moreButton",
-                                "width": 100,
-                                "designer|userClassName": "MyButton",
-                                "text": "More"
-                            },
-                            "designerId": "ca58d69a-10dd-48bf-b9ff-ad198083d34e"
+                            "designerId": "ae32e7c3-d8a8-4932-a187-25900d30d2b5"
                         }
                     ]
                 }
             ]
         },
         {
-            "type": "Ext.Map",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Map",
-                "id": "detailMap",
-                "designer|userClassName": "MyMap"
+                "data": [
+                    "{\r",
+                    "            \"name\": \"Brig\",\r",
+                    "            \"arrivalTime\": \"15:04\",\r",
+                    "            \"departureTime\": \"13:32\",\r",
+                    "            \"sunLevel\": 1,\r",
+                    "            \"temperature\": 15,\r",
+                    "            \"forecastTime\": \"15.00\",\r",
+                    "            \"forecastSunLevel\": 2,\r",
+                    "            \"forecastTemperature\": 17\r",
+                    "        }"
+                ],
+                "height": 100,
+                "html": null,
+                "id": "connection",
+                "padding": 10,
+                "designer|displayName": "MiddleContainer"
             },
-            "designerId": "ab246b37-f281-4d28-9631-758daaeae7ce"
+            "designerId": "d3bad206-f339-4fc8-addb-69229f70c28e",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "{departureTime} - {arrivalTime}"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "6f5b6325-8715-4714-905c-e0743db5f9d1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "map",
+                "padding": 10,
+                "designer|displayName": "BottomContainer"
+            },
+            "designerId": "a5381b55-fdc6-49bf-98af-880ba06d6267",
+            "cn": [
+                {
+                    "type": "Ext.Map",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 200,
+                        "id": "googleMap",
+                        "designer|displayName": "GoogleMap",
+                        "mapOptions": [
+                            "{       \r",
+                            "    zoom: 10,\r",
+                            "        panControl: false,\r",
+                            "        zoomControl: false,\r",
+                            "        mapTypeControl: false,\r",
+                            "        scaleControl: false,\r",
+                            "        streetViewControl: false,\r",
+                            "        overviewMapControl: false\r",
+                            "}"
+                        ],
+                        "useCurrentLocation": true
+                    },
+                    "designerId": "e175dd0d-a517-4afd-a80a-4e57c1e230bc"
+                }
+            ]
         }
     ]
 }

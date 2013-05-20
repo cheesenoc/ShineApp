@@ -1,0 +1,236 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StationController"
+    },
+    "designerId": "c6701218-0f68-40a8-862f-a9a8710b8e68",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var me = this;\r",
+                    "\r",
+                    "Ext.Viewport.setMasked({ message: 'Loading...' });\r",
+                    "// get the location, then...\r",
+                    "me.getLocation(function (location) {\r",
+                    "\r",
+                    "    // then get the stations somehow\r",
+                    "    me.getStations(location, function (store) {\r",
+                    "\r",
+                    "        // then bind data to list and show it\r",
+                    "        me.getStationList().setStore(store);\r",
+                    "\r",
+                    "        Ext.Viewport.setMasked(false);\r",
+                    "    });\r",
+                    "});\t"
+                ]
+            },
+            "designerId": "ca46869f-32dc-46a3-8a0c-8a2ce7f54391"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "stationList",
+                "selector": "stationlist"
+            },
+            "designerId": "96dc138b-b1e5-4eaa-befa-d6ccfdaa4695"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "listCard",
+                "selector": "#listCard"
+            },
+            "designerId": "644811d7-6566-485f-b499-a40aa099cb3f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainNav",
+                "selector": "mainnav"
+            },
+            "designerId": "1cc02f76-afef-4fe9-adc2-b0caeaada934"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "detailCard",
+                "selector": "detailpanel"
+            },
+            "designerId": "cd280202-7874-42c1-a51a-15fd673e43a0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getLocation",
+                "designer|params": [
+                    "callback"
+                ],
+                "implHandler": [
+                    "if (navigator && navigator.geolocation) {\r",
+                    "    navigator.geolocation.getCurrentPosition(function(position) {\r",
+                    "        callback(position);\r",
+                    "    }, function(error) {\r",
+                    "        // give a warning for error\r",
+                    "    });\r",
+                    "}"
+                ]
+            },
+            "designerId": "baf9aeb1-32a1-46a9-aa62-b8c24ca22621"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getBusinesses",
+                "designer|params": [
+                    "location",
+                    "callback"
+                ],
+                "implHandler": [
+                    "// NOTE ABOUT YELP KEY\r",
+                    "// You must use your own yelp key, available by registering (for free) with Yelp:\r",
+                    "// http://www.yelp.com/developers/getting_started/api_overview\r",
+                    "// (in this app, we use the Review Search API v1.0)\r",
+                    "var store = Ext.data.StoreManager.lookup('BusinessStore'),\r",
+                    "    yelpKey = '5L_olXjLGfTzBIMpWyNbpA', // enter your yelp key here\r",
+                    "    url = 'http://api.yelp.com/business_review_search' +\r",
+                    "    '?ywsid=' + yelpKey +\r",
+                    "    '&term=Bars' +\r",
+                    "    '&lat=' + location.coords.latitude +\r",
+                    "    '&long=' + location.coords.longitude;\r",
+                    "store.getProxy().setUrl(url);\r",
+                    "store.load(function() {\r",
+                    "    callback(store);\r",
+                    "});"
+                ]
+            },
+            "designerId": "acb6a8cf-3806-42e6-b652-fe080b842b67"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var me = this,\r",
+                    "    map,\r",
+                    "    lat,\r",
+                    "    lon,\r",
+                    "    loc,\r",
+                    "    marker,\r",
+                    "    weather,\r",
+                    "    connection,\r",
+                    "    details;\r",
+                    "\r",
+                    "if (record) {\r",
+                    "\r",
+                    "    details = Ext.create('Shine.view.DetailPanel', {\r",
+                    "        title: record.get('name')\r",
+                    "    });\r",
+                    "\r",
+                    "    // set the map\r",
+                    "    map = details.child('#map').child('#googleMap');\r",
+                    "    lat = record.get('latitude');\r",
+                    "    lon = record.get('longitude');\r",
+                    "\r",
+                    "    // fixes a bug in touch 2.1.1\r",
+                    "    map.element.un('painted', 'setMapCenter', map);\r",
+                    "\r",
+                    "    //    setTimeout(function() {\r",
+                    "    map.setMapCenter({\r",
+                    "        latitude: lat,\r",
+                    "        longitude: lon\r",
+                    "    });\r",
+                    "    //\t}, 10);\r",
+                    "\r",
+                    "    // set the info\r",
+                    "    weather = details.child('#weather');\r",
+                    "    weather.child('#weatherNow').setData(record.data);\r",
+                    "    weather.child('#weatherForecast').setData(record.data);\r",
+                    "    connection = details.child('#connection');\r",
+                    "    connection.setData(record.data);\r",
+                    "\r",
+                    "    me.getMainNav().push(details);\r",
+                    "}"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#stationList"
+            },
+            "designerId": "32e1acd6-a297-49a5-a360-bb73c55622f5"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getStations",
+                "designer|params": [
+                    "location",
+                    "callback"
+                ],
+                "implHandler": [
+                    "// TODO: create this dynamically, maybe switch to jsonp\r",
+                    "var store = Ext.data.StoreManager.lookup('Stations'),\r",
+                    "    url = 'stations.json'\r",
+                    "\r",
+                    "    store.getProxy().setUrl(url);\r",
+                    "store.load(function() {\r",
+                    "    callback(store);\r",
+                    "}\r",
+                    ");"
+                ]
+            },
+            "designerId": "fdc04d23-9389-4226-ac39-a65ea09d6808"
+        }
+    ]
+}

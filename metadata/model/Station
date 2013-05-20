@@ -19,8 +19,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "name",
-                "type": "string",
-                "designer|userClassName": "field"
+                "type": "string"
             },
             "designerId": "d7ef3b8a-0b6a-4376-8603-2c6156978e42"
         },
@@ -32,9 +31,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "dateFormat": null,
                 "name": "arrivalTime",
-                "type": "date",
-                "designer|userClassName": "field1"
+                "type": "string"
             },
             "designerId": "64aba9e3-df4a-45d4-87df-084e272da8e1"
         },
@@ -46,11 +45,101 @@
             },
             "codeClass": null,
             "userConfig": {
+                "name": "departureTime",
+                "type": "string"
+            },
+            "designerId": "a9e703cd-17ee-40fb-9a86-9c1e0f15786e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "name": "sunLevel",
-                "type": "int",
-                "designer|userClassName": "field2"
+                "type": "int"
             },
             "designerId": "11a64528-9c09-4ebd-a022-05ec5f80abc0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "temperature",
+                "type": "int"
+            },
+            "designerId": "13cfc873-0c44-4092-8918-416e44d4ad52"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "forecastTime",
+                "type": "string"
+            },
+            "designerId": "8b8fcb6e-49a2-4cbb-bfbd-b8840cf92920"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "forecastSunLevel",
+                "type": "int"
+            },
+            "designerId": "6948e442-f00f-4421-b0df-6e0e9eebff61"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "forecastTemperature",
+                "type": "int"
+            },
+            "designerId": "d76c12c2-2d6a-428e-9962-b6c9d629a77d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "latitude",
+                "type": "float"
+            },
+            "designerId": "d92c2b41-ddd8-46cd-b962-b3afcac76b12"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "longitude",
+                "type": "float"
+            },
+            "designerId": "ccf38066-7bb6-4886-86c8-80913a2dce34"
         }
     ]
 }

@@ -22,7 +22,7 @@
         ],
         "appFolder": "Shine",
         "controllers": [
-            "BusinessController"
+            "StationController"
         ],
         "icon": "resources/icons/Icon.png",
         "name": "Shine",

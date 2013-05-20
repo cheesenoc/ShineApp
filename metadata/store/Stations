@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy",
                 "url": "stations.json"
             },
             "designerId": "a888fde4-e416-4757-a2f2-e136697b34e3",
@@ -34,7 +33,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader"
+                        "rootProperty": "stations"
                     },
                     "designerId": "1a0bbe41-30eb-4dcf-9fa2-8e20546ad9d4"
                 }
