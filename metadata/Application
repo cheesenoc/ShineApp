@@ -7,12 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Station",
-            "Business"
+            "Station"
         ],
         "stores": [
-            "Stations",
-            "BusinessStore"
+            "Stations"
         ],
         "views": [
             "MainNav",
@@ -20,6 +18,7 @@
             "StationContainer",
             "DetailPanel"
         ],
+        "appFolder": null,
         "controllers": [
             "StationController"
         ],

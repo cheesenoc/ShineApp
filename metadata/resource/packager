@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "packager",
         "applicationName": "Shine",
-        "applicationId": "com.mycompany.myAppID",
+        "applicationId": "ch.dreamweb.Shine",
         "versionString": "1.0",
         "versionCode": "1",
         "icon": [
@@ -24,11 +24,9 @@
         "permissions": [
             "INTERNET",
             "ACCESS_NETWORK_STATE",
-            "CAMERA",
             "VIBRATE",
             "ACCESS_FINE_LOCATION",
-            "ACCESS_COARSE_LOCATION",
-            "CALL_PHONE"
+            "ACCESS_COARSE_LOCATION"
         ],
         "orientations": [
             "portrait",

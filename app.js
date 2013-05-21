@@ -20,12 +20,10 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Station',
-        'Business'
+        'Station'
     ],
     stores: [
-        'Stations',
-        'BusinessStore'
+        'Stations'
     ],
     views: [
         'MainNav',

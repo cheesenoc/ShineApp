@@ -68,30 +68,6 @@
             ],
             "className": "StationContainer"
         },
-        "1fc48fb6-2a1c-4d41-adfc-c02b8942c7af": {
-            "paths": [
-                "metadata/view/DetailPanelOld",
-                "app/view/override/DetailPanelOld.js",
-                "app/view/DetailPanelOld.js"
-            ],
-            "className": "DetailPanelOld"
-        },
-        "d06e965f-1dc4-4d50-8dfd-854b7d5182ba": {
-            "paths": [
-                "metadata/model/Business",
-                "app/model/override/Business.js",
-                "app/model/Business.js"
-            ],
-            "className": "Business"
-        },
-        "d99c5a74-1963-4be1-8af7-a23a434bc6e5": {
-            "paths": [
-                "metadata/store/BusinessStore",
-                "app/store/override/BusinessStore.js",
-                "app/store/BusinessStore.js"
-            ],
-            "className": "BusinessStore"
-        },
         "c6701218-0f68-40a8-862f-a9a8710b8e68": {
             "paths": [
                 "metadata/controller/StationController",
@@ -107,12 +83,6 @@
                 "packager.json"
             ],
             "className": "packager"
-        },
-        "07faeaaf-baf8-4cb6-8caa-e5b0d1822853": {
-            "paths": [
-                "metadata/resource/js1"
-            ],
-            "className": "js1"
         },
         "a0023ab7-c89e-44da-bdc8-b14f1a8fa236": {
             "paths": [
@@ -140,25 +110,21 @@
             "eef8ee4c-a0f4-4636-b934-95b64498c1ca",
             "5dd7b2e9-81ec-4504-ac2e-fda22154c425",
             "6622ac0b-a1df-4d31-a49a-b2f8d50791f4",
-            "1fc48fb6-2a1c-4d41-adfc-c02b8942c7af",
             "64bd55e4-da39-4ace-8846-48891a8bfbac"
         ],
         "store": [
-            "d7a8994c-1d7a-44a3-9279-60df85996adb",
-            "d99c5a74-1963-4be1-8af7-a23a434bc6e5"
+            "d7a8994c-1d7a-44a3-9279-60df85996adb"
         ],
         "controller": [
             "c6701218-0f68-40a8-862f-a9a8710b8e68"
         ],
         "model": [
-            "434573a7-625d-4640-9b77-62e3190e2d90",
-            "d06e965f-1dc4-4d50-8dfd-854b7d5182ba"
+            "434573a7-625d-4640-9b77-62e3190e2d90"
         ],
         "resource": [
             "afe48120-9d88-47cf-ba10-748b0a4ed71e",
             "ae70b474-a3a2-4e0f-a9e7-4698499df3cc",
             "fb7c6dca-0cd3-406a-b619-2d0477576de9",
-            "07faeaaf-baf8-4cb6-8caa-e5b0d1822853",
             "a0023ab7-c89e-44da-bdc8-b14f1a8fa236",
             "f60edf28-12c6-4f4a-8bd6-a906d63fdb06"
         ],

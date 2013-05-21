@@ -49,7 +49,7 @@
                         ],
                         "id": "weatherNow",
                         "padding": 10,
-                        "width": 100,
+                        "width": null,
                         "designer|displayName": "TopLeftContainer"
                     },
                     "designerId": "467c50fe-00ab-4462-a38d-104bbf5af9b8",
@@ -63,7 +63,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "implHandler": [
-                                    "{name}"
+                                    "<div class=\"stationDetail sunLevel{sunLevel}\">\r",
+                                    "    <p class=\"time\">now</p>\r",
+                                    "    <p class=\"temperature\">{temperature}&deg;</p>\r",
+                                    "</div>"
                                 ],
                                 "designer|displayName": "tpl"
                             },
@@ -93,7 +96,7 @@
                         ],
                         "id": "weatherForecast",
                         "padding": 10,
-                        "width": 100,
+                        "width": null,
                         "designer|displayName": "TopRightContainer"
                     },
                     "designerId": "cea8fed0-808c-4f87-875a-4ace9b2771d3",
@@ -107,7 +110,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "implHandler": [
-                                    "{forecastTime}"
+                                    "<div class=\"stationDetail sunLevel{forecastSunLevel}\">\r",
+                                    "    <p class=\"time\">{forecastTime}</p>\r",
+                                    "    <p class=\"temperature\">{forecastTemperature}&deg;</p>\r",
+                                    "</div>"
                                 ],
                                 "designer|displayName": "tpl"
                             },
@@ -140,25 +146,79 @@
                 "height": 100,
                 "html": null,
                 "id": "connection",
-                "padding": 10,
-                "designer|displayName": "MiddleContainer"
+                "padding": null,
+                "designer|displayName": "MiddleContainer",
+                "layout": "hbox"
             },
             "designerId": "d3bad206-f339-4fc8-addb-69229f70c28e",
             "cn": [
                 {
-                    "type": "Ext.XTemplate",
+                    "type": "Ext.Container",
                     "reference": {
-                        "name": "tpl",
-                        "type": "object"
+                        "name": "items",
+                        "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "implHandler": [
-                            "{departureTime} - {arrivalTime}"
-                        ],
-                        "designer|displayName": "tpl"
+                        "id": "connectionDeparture",
+                        "padding": 10,
+                        "designer|displayName": "MiddleLeftContainer"
                     },
-                    "designerId": "6f5b6325-8715-4714-905c-e0743db5f9d1"
+                    "designerId": "687fca59-717c-4a3c-8992-19b3e7c1f4f0",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "    <div class=\"departure\">\r",
+                                    "        <p class=\"departureStation\">Bern</p>\r",
+                                    "        <p class=\"departureTime\">{departureTime}</p>\r",
+                                    "    </div>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "6f5b6325-8715-4714-905c-e0743db5f9d1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "connectionArrival",
+                        "padding": 10,
+                        "designer|displayName": "MiddleRightContainer"
+                    },
+                    "designerId": "4898abc7-370a-4f2e-b3ad-7368e2a7fea7",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "    <div class=\"arrival\">\r",
+                                    "        <p class=\"arrivalStation\">{name}</p>\r",
+                                    "        <p class=\"arrivalTime\">{arrivalTime}</p>\r",
+                                    "    </div>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "da77a56f-3a44-42f2-ac0f-a32fdc4015ba"
+                        }
+                    ]
                 }
             ]
         },
@@ -189,7 +249,7 @@
                         "designer|displayName": "GoogleMap",
                         "mapOptions": [
                             "{       \r",
-                            "    zoom: 10,\r",
+                            "    zoom: 8,\r",
                             "        panControl: false,\r",
                             "        zoomControl: false,\r",
                             "        mapTypeControl: false,\r",

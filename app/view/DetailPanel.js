@@ -45,9 +45,11 @@ Ext.define('Shine.view.DetailPanel', {
                         id: 'weatherNow',
                         padding: 10,
                         tpl: [
-                            '{name}'
-                        ],
-                        width: 100
+                            '<div class="stationDetail sunLevel{sunLevel}">',
+                            '    <p class="time">now</p>',
+                            '    <p class="temperature">{temperature}&deg;</p>',
+                            '</div>'
+                        ]
                     },
                     {
                         xtype: 'container',
@@ -64,9 +66,11 @@ Ext.define('Shine.view.DetailPanel', {
                         id: 'weatherForecast',
                         padding: 10,
                         tpl: [
-                            '{forecastTime}'
-                        ],
-                        width: 100
+                            '<div class="stationDetail sunLevel{forecastSunLevel}">',
+                            '    <p class="time">{forecastTime}</p>',
+                            '    <p class="temperature">{forecastTemperature}&deg;</p>',
+                            '</div>'
+                        ]
                     }
                 ]
             },
@@ -84,9 +88,32 @@ Ext.define('Shine.view.DetailPanel', {
                 },
                 height: 100,
                 id: 'connection',
-                padding: 10,
-                tpl: [
-                    '{departureTime} - {arrivalTime}'
+                layout: {
+                    type: 'hbox'
+                },
+                items: [
+                    {
+                        xtype: 'container',
+                        id: 'connectionDeparture',
+                        padding: 10,
+                        tpl: [
+                            '    <div class="departure">',
+                            '        <p class="departureStation">Bern</p>',
+                            '        <p class="departureTime">{departureTime}</p>',
+                            '    </div>'
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        id: 'connectionArrival',
+                        padding: 10,
+                        tpl: [
+                            '    <div class="arrival">',
+                            '        <p class="arrivalStation">{name}</p>',
+                            '        <p class="arrivalTime">{arrivalTime}</p>',
+                            '    </div>'
+                        ]
+                    }
                 ]
             },
             {
@@ -99,7 +126,7 @@ Ext.define('Shine.view.DetailPanel', {
                         height: 200,
                         id: 'googleMap',
                         mapOptions: {
-                            zoom: 10,
+                            zoom: 8,
                             panControl: false,
                             zoomControl: false,
                             mapTypeControl: false,

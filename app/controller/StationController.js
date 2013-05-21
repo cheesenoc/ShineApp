@@ -68,7 +68,8 @@ Ext.define('Shine.controller.StationController', {
             weather.child('#weatherNow').setData(record.data);
             weather.child('#weatherForecast').setData(record.data);
             connection = details.child('#connection');
-            connection.setData(record.data);
+            connection.child('#connectionDeparture').setData(record.data);
+            connection.child('#connectionArrival').setData(record.data);
 
             me.getMainNav().push(details);
         }
@@ -97,35 +98,17 @@ Ext.define('Shine.controller.StationController', {
             navigator.geolocation.getCurrentPosition(function(position) {
                 callback(position);
             }, function(error) {
-                // give a warning for error
+                alert(error);
             });
         }
-    },
-
-    getBusinesses: function(location, callback) {
-        // NOTE ABOUT YELP KEY
-        // You must use your own yelp key, available by registering (for free) with Yelp:
-        // http://www.yelp.com/developers/getting_started/api_overview
-        // (in this app, we use the Review Search API v1.0)
-        var store = Ext.data.StoreManager.lookup('BusinessStore'),
-            yelpKey = '5L_olXjLGfTzBIMpWyNbpA', // enter your yelp key here
-            url = 'http://api.yelp.com/business_review_search' +
-            '?ywsid=' + yelpKey +
-            '&term=Bars' +
-            '&lat=' + location.coords.latitude +
-            '&long=' + location.coords.longitude;
-        store.getProxy().setUrl(url);
-        store.load(function() {
-            callback(store);
-        });
     },
 
     getStations: function(location, callback) {
         // TODO: create this dynamically, maybe switch to jsonp
         var store = Ext.data.StoreManager.lookup('Stations'),
-            url = 'stations.json'
+            url = 'stations.json';
 
-            store.getProxy().setUrl(url);
+        store.getProxy().setUrl(url);
         store.load(function() {
             callback(store);
         }

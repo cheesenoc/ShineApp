@@ -2,37 +2,63 @@
 .stationList {
 background-size:contain;
 background-repeat:no-repeat;
-background-position:45% 50%;
+background-position:25% 50%;
 }
 
-.stationList.sunLevel4 {
+.stationDetail {
+background-size:contain;
+background-repeat:no-repeat;
+background-position:75% 50%;
+min-height: 90px;
+min-width: 150px;
+}
+
+.stationList.sunLevel4, .stationDetail.sunLevel4  {
 background-image:url(resources/images/Sun.svg);
 }
 
-.stationList.sunLevel3 {
+.stationList.sunLevel3, .stationDetail.sunLevel3 {
 background-image:url(resources/images/Cloud-More-Sun.svg);
 }
 
-.stationList.sunLevel2 {
+.stationList.sunLevel2, .stationDetail.sunLevel2 {
 background-image:url(resources/images/Cloud-Sun.svg);
 }
 
-.stationList.sunLevel1 {
+.stationList.sunLevel1, .stationDetail.sunLevel1 {
 background-image:url(resources/images/Cloud-Light-Sun.svg);
 }
 
-.stationList.sunLevel0 {
+.stationList.sunLevel0, .stationDetail.sunLevel0 {
 background-image:url(resources/images/Cloud.svg)
 }
 
-.stationList>.stationName {
+.stationDetail>.time, .departure>.departureStation , .arrival>.arrivalStation {
+font-size:0.7em;
+}
+
+.departure>.departureStation , .arrival>.arrivalStation {
+min-width: 150px;
+}
+
+.departure>.departureTime, .arrival>.arrivalTime {
+font-size:2.5em;
+text-align:right;
+}
+
+.stationDetail>.temperature, .stationList>.stationName {
 font-size:1.1em;
+}
+
+.stationDetail>.temperature {
+padding-top: 45px;
 }
 
 .stationList>.arrivalTime {
 font-size:2.5em;
 text-align:right;
 }
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
     margin:0;
     padding:0}

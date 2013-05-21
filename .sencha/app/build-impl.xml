@@ -155,7 +155,7 @@ this file in most cases.
         <property name="app.sass.dir" location="${app.resources.dir}/${app.sass.name}"/>
         
         <!-- Specify packaging info -->
-        <property name="app.packager.file" location="${app.dir}/packager.temp.json"/>
+        <property name="app.packager.file" location="${app.dir}/packagerAndroid.json"/>
         
         <if>
             <equals arg1="${args.environment}" arg2="production"/>
